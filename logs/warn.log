@@ -225,3 +225,14 @@
 [2023-02-18T22:28:40.383] [WARN] warnings - { message: 'Route not found', url: '/api/products', method: 'GET' }
 [2023-02-18T22:29:30.254] [WARN] warnings - { message: 'Route not found', url: '/api/products', method: 'GET' }
 [2023-02-18T22:29:44.093] [WARN] warnings - { message: 'Route not found', url: '/api/products', method: 'GET' }
+[2023-02-25T19:23:13.349] [WARN] warnings - { message: 'Route not found', url: '/api/products', method: 'GET' }
+[2023-02-25T19:23:24.247] [WARN] warnings - { message: 'Route not found', url: '/products', method: 'GET' }
+[2023-02-25T19:23:48.019] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/products/products',
+  method: 'GET'
+}
+[2023-02-25T19:24:31.508] [WARN] warnings - { message: 'Route not found', url: '/products', method: 'GET' }
+[2023-02-25T19:24:45.737] [WARN] warnings - { message: 'Route not found', url: '/products', method: 'GET' }
+[2023-02-25T19:25:04.191] [WARN] warnings - { message: 'Route not found', url: '/api/products', method: 'GET' }
+[2023-02-25T20:35:57.158] [WARN] warnings - { message: 'Route not found', url: '/favicon.ico', method: 'GET' }

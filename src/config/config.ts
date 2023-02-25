@@ -9,6 +9,9 @@ import {engine} from "express-handlebars";
 import { args } from './minimist/minimist.config';
 import os from "os";
 import cors from "cors";
+import { graphqlHTTP } from 'express-graphql';
+import { graphqlRoot, graphqlSchema } from '../graphql/graphql.schema';
+
 
 export class Config {
     public static readonly PORT: number = args.p;
@@ -35,7 +38,12 @@ export class Config {
             cookie: {
                 maxAge: 1000 * 60 * 10 // 1 segundo * 60 * 10 = 10 minutos
             }
-        }))
+        }));
+        app.use("/graphql", graphqlHTTP({
+            schema: graphqlSchema,
+            graphiql: true,
+            rootValue: graphqlRoot
+        }));
         configurePassport(app);
     };
     private constructor() {

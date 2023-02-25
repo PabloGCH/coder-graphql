@@ -1,0 +1,227 @@
+
+[2023-01-15T15:53:05.485] [WARN] warnings - { message: 'Route not found', url: '/vsdvsadvsad', method: 'GET' }
+[2023-01-15T15:53:16.216] [WARN] warnings - { message: 'Route not found', url: '/vsdvsadvsad', method: 'GET' }
+[2023-01-15T15:53:17.891] [WARN] warnings - { message: 'Route not found', url: '/vsdvsadvsad', method: 'GET' }
+[2023-01-15T15:53:20.541] [WARN] warnings - { message: 'Route not found', url: '/vsdvsadvsad', method: 'GET' }
+[2023-01-15T15:53:22.430] [WARN] warnings - { message: 'Route not found', url: '/vsdvsadvsad', method: 'GET' }
+[2023-01-15T16:05:37.196] [WARN] warnings - { message: 'Route not found', url: '/vsdvsadvsad', method: 'GET' }
+[2023-01-15T16:35:46.830] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/class=%22table-img%22',
+  method: 'GET'
+}
+[2023-01-15T16:36:35.743] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/class=%22table-img%22',
+  method: 'GET'
+}
+[2023-01-15T16:40:57.797] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/class=%22table-img%22',
+  method: 'GET'
+}
+[2023-01-15T16:43:46.151] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/class=%22table-img%22',
+  method: 'GET'
+}
+[2023-01-15T16:47:45.595] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/class=%22table-img%22',
+  method: 'GET'
+}
+[2023-01-15T17:03:09.811] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/class=%22table-img%22',
+  method: 'GET'
+}
+[2023-02-03T20:49:37.944] [WARN] warnings - { message: 'Route not found', url: '/favicon.ico', method: 'GET' }
+[2023-02-03T20:51:23.388] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/class=%22table-img%22',
+  method: 'GET'
+}
+[2023-02-03T20:52:04.510] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/class=%22table-img%22',
+  method: 'GET'
+}
+[2023-02-04T00:02:39.704] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/styles/index.css',
+  method: 'GET'
+}
+[2023-02-04T00:02:39.718] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/client/index.js',
+  method: 'GET'
+}
+[2023-02-04T00:03:15.147] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/styles/index.css',
+  method: 'GET'
+}
+[2023-02-04T00:03:15.177] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/client/index.js',
+  method: 'GET'
+}
+[2023-02-04T00:03:26.029] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/styles/index.css',
+  method: 'GET'
+}
+[2023-02-04T00:03:26.053] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/client/index.js',
+  method: 'GET'
+}
+[2023-02-04T00:03:29.071] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/styles/index.css',
+  method: 'GET'
+}
+[2023-02-04T00:03:32.369] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/styles/index.css',
+  method: 'GET'
+}
+[2023-02-04T00:03:32.451] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/client/index.js',
+  method: 'GET'
+}
+[2023-02-04T00:04:35.944] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/styles/index.css',
+  method: 'GET'
+}
+[2023-02-04T00:04:35.984] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/client/index.js',
+  method: 'GET'
+}
+[2023-02-04T00:05:29.977] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/styles/index.css',
+  method: 'GET'
+}
+[2023-02-04T00:05:29.993] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/client/index.js',
+  method: 'GET'
+}
+[2023-02-04T00:06:34.601] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/styles/index.css',
+  method: 'GET'
+}
+[2023-02-04T00:06:34.703] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/client/index.js',
+  method: 'GET'
+}
+[2023-02-04T00:07:26.280] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/styles/index.css',
+  method: 'GET'
+}
+[2023-02-04T00:07:26.304] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/client/index.js',
+  method: 'GET'
+}
+[2023-02-04T00:08:45.951] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/styles/index.css',
+  method: 'GET'
+}
+[2023-02-04T00:08:45.999] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/client/index.js',
+  method: 'GET'
+}
+[2023-02-04T00:08:52.704] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/styles/index.css',
+  method: 'GET'
+}
+[2023-02-04T00:08:52.743] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/client/index.js',
+  method: 'GET'
+}
+[2023-02-04T00:09:22.087] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/styles/index.css',
+  method: 'GET'
+}
+[2023-02-04T00:09:22.111] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/client/index.js',
+  method: 'GET'
+}
+[2023-02-04T00:12:37.163] [WARN] warnings - { message: 'Route not found', url: '/client/login', method: 'GET' }
+[2023-02-04T00:13:47.756] [WARN] warnings - { message: 'Route not found', url: '/client/login', method: 'GET' }
+[2023-02-04T00:13:52.751] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/styles/index.css',
+  method: 'GET'
+}
+[2023-02-04T00:13:52.785] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/client/index.js',
+  method: 'GET'
+}
+[2023-02-04T00:14:43.937] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/styles/index.css',
+  method: 'GET'
+}
+[2023-02-04T00:14:44.001] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/client/index.js',
+  method: 'GET'
+}
+[2023-02-04T00:15:10.512] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/styles/index.css',
+  method: 'GET'
+}
+[2023-02-04T00:15:10.540] [WARN] warnings - {
+  message: 'Route not found',
+  url: '/client/client/index.js',
+  method: 'GET'
+}
+[2023-02-04T02:39:51.803] [WARN] warnings - { message: 'Route not found', url: '/favicon.ico', method: 'GET' }
+[2023-02-04T02:39:57.397] [WARN] warnings - { message: 'Route not found', url: '/register', method: 'GET' }
+[2023-02-04T02:44:11.505] [WARN] warnings - { message: 'Route not found', url: '/login', method: 'GET' }
+[2023-02-04T02:44:32.958] [WARN] warnings - { message: 'Route not found', url: '/login', method: 'GET' }
+[2023-02-04T02:44:35.685] [WARN] warnings - { message: 'Route not found', url: '/login', method: 'GET' }
+[2023-02-04T02:49:33.810] [WARN] warnings - { message: 'Route not found', url: '/register', method: 'GET' }
+[2023-02-04T02:50:07.328] [WARN] warnings - { message: 'Route not found', url: '/register', method: 'GET' }
+[2023-02-04T02:50:26.281] [WARN] warnings - { message: 'Route not found', url: '/register', method: 'GET' }
+[2023-02-04T02:50:36.754] [WARN] warnings - { message: 'Route not found', url: '/register', method: 'GET' }
+[2023-02-04T02:50:39.315] [WARN] warnings - { message: 'Route not found', url: '/register', method: 'GET' }
+[2023-02-04T02:53:26.547] [WARN] warnings - { message: 'Route not found', url: '/login', method: 'GET' }
+[2023-02-04T03:02:18.099] [WARN] warnings - { message: 'Route not found', url: '/server-info', method: 'GET' }
+[2023-02-04T03:02:47.048] [WARN] warnings - { message: 'Route not found', url: '/server-info', method: 'GET' }
+[2023-02-04T03:03:10.095] [WARN] warnings - { message: 'Route not found', url: '/server-info', method: 'GET' }
+[2023-02-04T03:03:30.896] [WARN] warnings - { message: 'Route not found', url: '/server-info', method: 'GET' }
+[2023-02-04T03:24:58.259] [WARN] warnings - { message: 'Route not found', url: '/login', method: 'GET' }
+[2023-02-04T03:24:59.700] [WARN] warnings - { message: 'Route not found', url: '/login', method: 'GET' }
+[2023-02-04T03:25:08.099] [WARN] warnings - { message: 'Route not found', url: '/login', method: 'GET' }
+[2023-02-04T03:25:38.794] [WARN] warnings - { message: 'Route not found', url: '/login', method: 'GET' }
+[2023-02-04T03:25:40.391] [WARN] warnings - { message: 'Route not found', url: '/login', method: 'GET' }
+[2023-02-04T03:26:13.144] [WARN] warnings - { message: 'Route not found', url: '/login', method: 'GET' }
+[2023-02-04T03:32:16.024] [WARN] warnings - { message: 'Route not found', url: '/login', method: 'GET' }
+[2023-02-04T03:33:10.075] [WARN] warnings - { message: 'Route not found', url: '/login', method: 'GET' }
+[2023-02-04T03:33:32.503] [WARN] warnings - { message: 'Route not found', url: '/login', method: 'GET' }
+[2023-02-08T22:32:54.263] [WARN] warnings - { message: 'Route not found', url: '/favicon.ico', method: 'GET' }
+[2023-02-08T23:07:08.289] [WARN] warnings - { message: 'Route not found', url: '/favicon.ico', method: 'GET' }
+[2023-02-09T20:48:16.256] [WARN] warnings - { message: 'Route not found', url: '/favicon.ico', method: 'GET' }
+[2023-02-09T21:07:30.818] [WARN] warnings - { message: 'Route not found', url: '/favicon.ico', method: 'GET' }
+[2023-02-18T22:28:26.616] [WARN] warnings - { message: 'Route not found', url: '/api/products', method: 'GET' }
+[2023-02-18T22:28:40.383] [WARN] warnings - { message: 'Route not found', url: '/api/products', method: 'GET' }
+[2023-02-18T22:29:30.254] [WARN] warnings - { message: 'Route not found', url: '/api/products', method: 'GET' }
+[2023-02-18T22:29:44.093] [WARN] warnings - { message: 'Route not found', url: '/api/products', method: 'GET' }

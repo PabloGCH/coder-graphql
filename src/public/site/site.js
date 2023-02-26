@@ -76,104 +76,124 @@ const productTable = async(data) => {
 }
 
 const productFormSubmit = () => {
-	const form = document.getElementById("product-form");
-	const inputs = form.getElementsByTagName("input");
-	let newProduct = {
-		name: inputs[0].value,
-		price: inputs[1].value,
-		imgUrl: inputs[2].value
-	};
-	fetch("/api/products/product", {
-		method: "POST",
-		headers: {'Content-Type': 'application/json'},
-		body: JSON.stringify(newProduct)
-	})
-		.then(async(res) => {
-			let data = await res.json();
-			if(data.success) {
-				window.location.replace("stock")
-			}
-			if(!data.success && data.message == "not_logged") {
-				window.location.replace("login")
-			}
-		})
+    const form = document.getElementById("product-form");
+    const inputs = form.getElementsByTagName("input");
+    let newProduct = {
+        name: inputs[0].value,
+        price: inputs[1].value,
+        imgUrl: inputs[2].value
+    };
+    let query = `
+    mutation {
+    addProduct(name: "${newProduct.name}", price: ${newProduct.price}, imgUrl: "${newProduct.imgUrl}") {
+        success
+        message
+    }
+    }`
+    fetch("/graphql", {
+        method: "POST",
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+            query: query,
+            variables: {}
+        })
+    })
+        .then(async(res) => {
+            let data = await res.json();
+            data = data.data.addProduct
+            if(data.success) {
+                window.location.replace("stock")
+            }
+            if(!data.success && data.message == "not_logged") {
+                window.location.replace("login")
+            }
+        })
 }
 
 const chatSection = async(data, user) => {
-	Object.assign(data, {user: user, loggedUser: username})
-	const response = await fetch("../templates/chat.handlebars");
-	const result = await response.text();
-	const template = Handlebars.compile(result);
-	const html = template(data);
-	return html;
+    Object.assign(data, {user: user, loggedUser: username})
+    const response = await fetch("../templates/chat.handlebars");
+    const result = await response.text();
+    const template = Handlebars.compile(result);
+    const html = template(data);
+    return html;
 }
 
 //EVENTS
 const sendMessage = () => {
-	currentUserEmail = document.getElementById("email").value;
-	let message = document.getElementById("message").value;
-	let date = new Date();
-	let newMessage = {
-		email: currentUserEmail,
-		date: date.getDate().toString() + "/" + date.getMonth().toString() + "/" + date.getFullYear().toString() + " - " + date.getHours().toString() + ":" + date.getMinutes().toString() + ":" + date.getSeconds().toString(),
-		message: message
-	}
-	fetch("/api/messages/message", {
-		method: "POST",
-		headers: {'Content-Type': 'application/json'},
-		body: JSON.stringify(newMessage)
-	})
-		.then(async(res) => {
-			let data = await res.json();
-			if(!data.success && data.message == "not_logged") {
-				window.location.replace("login")
-			}
-		})
+
+    currentUserEmail = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+    let date = new Date();
+    let dateStr = date.getDate().toString() + "/" + date.getMonth().toString() + "/" + date.getFullYear().toString() + " - " + date.getHours().toString() + ":" + date.getMinutes().toString() + ":" + date.getSeconds().toString();
+    let query = `
+    mutation {
+    addMessage(email: "${currentUserEmail}", message: "${message}", date: "${dateStr}") {
+        success
+        message
+    }
+    }
+    `
+    fetch("/graphql", {
+        method: "POST",
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+            query: query,
+            variables: {}
+        })
+    })
+        .then(async(res) => {
+            console.log(res)
+            let data = await res.json();
+            if(!data.success && data.message == "not_logged") {
+                window.location.replace("login")
+            }
+        })
 }
 
 //REGISTER EVENT
 const registerSubmit = () => {
-	const form = document.getElementById("reg-form");
-	const inputs = form.getElementsByTagName("input");
-	let regData = {
-		username: inputs[0].value,
-		password: inputs[1].value
-	};
-	fetch("/api/auth/register", {
-		method: "POST",
-		headers: {'Content-Type': 'application/json'},
-		body: JSON.stringify(regData)
-	})
-		.then(async(res) => {
-			let data = await res.json();
-			if(data.success) {
-				window.location.replace("login")
-			} else {
-				window.location.replace("regerror")
-			}
-		})
+    const form = document.getElementById("reg-form");
+    const inputs = form.getElementsByTagName("input");
+    let regData = {
+        username: inputs[0].value,
+        password: inputs[1].value
+    };
+    fetch("/api/auth/register", {
+        method: "POST",
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(regData)
+    })
+        .then(async(res) => {
+            let data = await res.json();
+            if(data.success) {
+                window.location.replace("login")
+            } else {
+                window.location.replace("regerror")
+            }
+        })
 }
 //LOGIN EVENT
 const logSubmit = () => {
-	const form = document.getElementById("log-form");
-	const inputs = form.getElementsByTagName("input");
-	let logData = {
-		username: inputs[0].value,
-		password: inputs[1].value,
-	};
-	fetch("/api/auth/login", {
-		method: "POST",
-		headers: {'Content-Type': 'application/json'},
-		body: JSON.stringify(logData)
-	})
-		.then(async(res) => {
-			let data = await res.json();
-			if(data.success){
-				window.location.replace("stock")
-			} else {
-				window.location.replace("logerror")
-			}
-		})
+    const form = document.getElementById("log-form");
+    const inputs = form.getElementsByTagName("input");
+    let logData = {
+        username: inputs[0].value,
+        password: inputs[1].value,
+    };
+    fetch("/api/auth/login", {
+        method: "POST",
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(logData)
+    })
+        .then(async(res) => {
+            let data = await res.json();
+            if(data.success){
+                window.location.replace("stock")
+            } else {
+                window.location.replace("logerror")
+            }
+        })
 }
 
 
@@ -226,6 +246,7 @@ if(window.location.pathname.includes("/chat")) {
         messageBox.scrollTop = messageBox.scrollHeight;
     })
     socket.on("messages", data => {
+        console.log("MESSAGE UPDATE",data)
         chatSection(data, currentUserEmail).then(res => {
             content.innerHTML = res;
             document.getElementById("email").value = currentUserEmail;
@@ -243,3 +264,4 @@ const logOff = () => {
         window.location.replace("/")
     })
 } 
+

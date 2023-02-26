@@ -1,1 +1,24 @@
 
+[2023-02-25T21:23:34.380] [ERROR] errors - {
+  message: 'Failed to add product',
+  error: Error: products validation failed: price: Cast to Number failed for value "NaN" (type number) at path "price", imgUrl: Path `imgUrl` is required., name: Path `name` is required.
+      at ValidationError.inspect (/home/pablo/curso/coder-graphql/node_modules/mongoose/lib/error/validation.js:50:26)
+      at formatValue (node:internal/util/inspect:790:19)
+      at formatProperty (node:internal/util/inspect:1892:11)
+      at formatRaw (node:internal/util/inspect:1038:9)
+      at formatValue (node:internal/util/inspect:825:10)
+      at inspect (node:internal/util/inspect:350:10)
+      at formatWithOptionsInternal (node:internal/util/inspect:2241:40)
+      at Object.format (node:internal/util/inspect:2098:10)
+      at basicLayout (/home/pablo/curso/coder-graphql/node_modules/log4js/lib/layouts.js:65:52)
+      at app (/home/pablo/curso/coder-graphql/node_modules/log4js/lib/appenders/file.js:98:23) {
+    errors: {
+      price: [CastError],
+      imgUrl: [ValidatorError],
+      name: [ValidatorError]
+    },
+    _message: 'products validation failed'
+  },
+  url: '/product',
+  method: 'POST'
+}

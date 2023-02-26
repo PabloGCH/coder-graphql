@@ -38,6 +38,9 @@ export class SocketService {
             let messages = await messageManager.getObjects();
             socket.emit("messages", {messages: messages})
         })
+        SocketService.io.on('error', function (err :any) {
+            console.log(err);
+        });
     }
     public getSocketServer() :SocketServer {
         if(SocketService.io === null) {
